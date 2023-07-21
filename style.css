@@ -1,0 +1,785 @@
+body {
+    background-color: #f8e8ee;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    display: flex;
+    margin: 1.5rem 0;
+    align-items: center;
+    justify-content: space-between;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header .tengah {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+header .head a {
+    color: #333;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+header a {
+    text-decoration: none;
+    color: #333;
+}
+
+header .button {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    background: #333;
+    color: #eee;
+}
+
+header .button:hover {
+    background: #eee;
+    color: #333;
+    border-radius: 1rem;
+    outline: 1px solid #333;
+}
+
+.deskripsi .button {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    background: #333;
+    color: #f9f5f6;
+}
+
+.deskripsi .button:hover {
+    background: #eee;
+    color: #333;
+    border-radius: 1rem;
+    outline: 1px solid #333;
+}
+
+hr {
+    color: #333;
+    width: 100%;
+}
+
+.home {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.home .homepic {
+    align-items: flex-end;
+    object-fit: cover;
+    border-radius: 5rem;
+    height: 40rem;
+}
+
+.deskripsi {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    gap: 2rem;
+}
+
+.deskripsi h3 {
+    margin: 0;
+    font-size: 4rem;
+    color: #333;
+    line-height: 5rem;
+}
+
+.deskripsi p {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.deskripsi .button {
+    width: auto;
+    height: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bgaboutme {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.bgaboutme .aboutpic {
+    width: 100%;
+    height: 35rem;
+    object-fit: cover;
+    display: block;
+}
+
+.bgaboutme .bgtext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4rem;
+    background: #333;
+    position: absolute;
+    top: 40%;
+}
+
+.bgtext h1 {
+    color: #f9f5f6;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.introduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2rem 0;
+}
+
+.introduction .introductionpic {
+    object-fit: cover;
+    border-radius: 5rem;
+    width: 25rem;
+    height: 30rem;
+}
+
+.intro {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    gap: 2rem;
+}
+
+.intro h2 {
+    color: #333;
+    margin: 0;
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.intro h3 {
+    color: #333;
+    margin: 0;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.intro p {
+    color: #333;
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.loginpage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.loginpage .loginpic {
+    width: 50%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+.loginbox {
+    padding: 0 4rem;
+    display: flex;
+    width: 33rem;
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logintext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logintext h2 {
+    margin: 0;
+    color: #333;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.logintext h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+.loginform {
+    display: flex;
+    width: 33rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.loginform p {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    color: #333;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.loginform input {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 1rem;
+    height: 3rem;
+    border: 1px solid #333;
+    background: #f9f5f6;
+}
+
+.loginform .loginbutton {
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    color: #f9f5f6;
+    border-width: 0;
+}
+
+.loginform a {
+    color: #333;
+}
+
+header .headerlogin {
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+}
+
+header .headerlogin a {
+    color: #333;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+header .headerregister {
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+}
+
+header .headerregister a {
+    color: #333;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.registerpage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.registerpage .registerpic {
+    width: 50%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+.registerbox {
+    padding: 0 4rem;
+    display: flex;
+    width: 33rem;
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.registertext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.registertext h2 {
+    margin: 0;
+    color: #333;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.registertext h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+.registerform {
+    display: flex;
+    width: 33rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.registerform p {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    color: #333;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.registerform input {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 1rem;
+    height: 3rem;
+    border: 1px solid #333;
+    background: #f9f5f6;
+}
+
+.registerform .registerbutton {
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    color: #f9f5f6;
+    border-width: 0;
+}
+
+.registerform a {
+    color: #333;
+}
+
+.katalog {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.isikatalog {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    gap: 1.25rem;
+}
+
+.headkatalog p {
+    color: #333;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 2rem 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+    background: #f9f5f6;
+    border-radius: 1rem;
+    border: 1px solid #333;
+    padding: 1.25rem;
+    gap: 1rem;
+}
+
+.card img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
+}
+
+.card a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f9f5f6;
+    font-size: 1.25rem;
+    text-decoration: none;
+    border: 1px solid #333;
+    background: #333;
+    border-radius: 1rem;
+    width: 100%;
+    height: 3rem; 
+}
+
+.card a:hover {
+    background: #f9f5f6;
+    color: #333;
+}
+
+.detailcard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.detailcard p {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.infocard {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infocard p {
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.size {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.size h5 {
+    color: #333;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.size p {
+    color: #333;
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.bgadminmenu {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.bgadminmenu .adminmenupic {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    display: block;
+}
+
+.bgadminmenu .bgtext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4rem;
+    background: #333;
+    position: absolute;
+    top: 30%;
+}
+
+.bgtext h1 {
+    color: #f9f5f6;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.datakostum {
+    margin: 2rem 0;
+}
+
+.datakostum table {
+    border-collapse: collapse;
+    border-spacing: 1rem;
+    width: 100%;
+}
+
+.datakostum tbody {
+    border-radius: 1rem;
+    background: #333;
+}
+
+.datakostum th {
+    padding: 1rem;
+    text-align: left;
+}
+
+.datakostum td {
+    padding: 2rem 1rem;
+    text-align: left;
+}
+
+.datakostum td a {
+    text-decoration: none;
+    color: #f9f5f6;
+}
+
+.datakostum td a:hover {
+    text-decoration: underline;
+    color: #f9f5f6;
+}
+
+.datakostum tbody tr {
+    color: #f9f5f6;
+}
+
+.checkoutpage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkoutpage .checkoutpic {
+    width: 50%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+.checkoutbox {
+    padding: 0 4rem;
+    display: inline-flex;
+    gap: 2rem;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.checkouttext {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.checkouttext h2 {
+    color: #333;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.checkouttext p {
+    color: #333;
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+.checkoutform {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.checkoutform .kostum {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkoutform .formkostum {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    align-items: flex-start;
+}
+
+.checkoutform p {
+    color: #333;
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+.checkoutform input {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 1rem;
+    height: 3rem;
+    border: 1px solid #333;
+    background: #f9f5f6;
+}
+
+.checkoutform .harga {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.checkoutform .rentalbutton {
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    color: #f9f5f6;
+    border-width: 0;
+}
+
+.headtabel {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headtabel h2 {
+    color: #333;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.headtabel a {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    background: #333;
+    color: #f9f5f6;
+}
+
+.addbox {
+    margin: 2rem;
+    padding: 0 4rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.addtext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.addtext h2 {
+    margin: 0;
+    color: #333;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.addtext h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+.addform {
+    display: flex;
+    width: 33rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.addform p {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    color: #333;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.addform input {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 1rem;
+    height: 3rem;
+    border: 1px solid #333;
+    background: #f9f5f6;
+}
+
+.addform .addbutton {
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    color: #f9f5f6;
+    border-width: 0;
+}
