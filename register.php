@@ -14,9 +14,10 @@
         mysqli_query($conn,$q);
 
         if(mysqli_affected_rows($conn)>0){
-            echo"<script;>
-            alert('Terima kasih sudah bergabung dengan kami! Silahkan melanjutkan proses login.');</script>
-            document.location.href='login.php'";
+            echo"<script>
+            alert('Terima kasih sudah bergabung dengan kami! Silahkan melanjutkan proses login.');
+            document.location.href='login.php';
+            </script>";
         }
     }
 ?>

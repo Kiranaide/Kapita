@@ -79,8 +79,7 @@ $result = mysqli_query($conn, "SELECT * FROM rental");
                         <th>No</th>
                         <th>Nama Kostum</th>
                         <th>Penyewa</th>
-                        <th>Alamat</th>
-                        <th>No.Telepon</th>
+                        <th>Tanggal Rental</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -89,8 +88,7 @@ $result = mysqli_query($conn, "SELECT * FROM rental");
                         <td><?php echo $row["id"]; ?></td>
                         <td><?php echo $row["kostum"]; ?></td>
                         <td><?php echo $row["nama"]; ?></td>
-                        <td><?php echo $row["alamat"]; ?></td>
-                        <td><?php echo $row["notelpon"]; ?></td>
+                        <td><?php echo $row["tglrental"]; ?></td>
                     </tr>
                 <?php $i++; endwhile; ?>
                 </tbody>

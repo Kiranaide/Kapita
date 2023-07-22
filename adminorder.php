@@ -50,6 +50,7 @@ if ($_SESSION["username"] != 'admin') {
                     <th>Penyewa</th>
                     <th>Alamat</th>
                     <th>No.Telepon</th>
+                    <th>Tanggal Rental</th>
                 </tr>
             </thead>
             <tbody>
@@ -60,6 +61,7 @@ if ($_SESSION["username"] != 'admin') {
                     <td><?php echo $row["nama"]; ?></td>
                     <td><?php echo $row["alamat"]; ?></td>
                     <td><?php echo $row["notelpon"]; ?></td>
+                    <td><?php echo $row["tglrental"]; ?></td>
                 </tr>
             <?php $i++; endwhile; ?>
             </tbody>
