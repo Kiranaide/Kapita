@@ -30,6 +30,7 @@ $name=$_SESSION["name"];
         <div class="tengah">
             <a href="index.php#about">ABOUT</a>
             <a href="store.php">STORE</a>
+            <a href="rental.php">RENTED</a>
         </div>
         <?php 
             if(isset($_SESSION["username"])){

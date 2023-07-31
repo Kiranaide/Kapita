@@ -12,20 +12,24 @@ $username=$_SESSION["username"];
 $conn = mysqli_connect('localhost','root','','kapitaputri');
 if(isset($_POST["simpan"])){
     $kostum=$_POST["kostum"];
-    $harga=$_POST["harga"];
     $ukuran=$_POST["ukuran"];
+    $harga=$_POST["harga"];
     $include=$_POST["include"];
     $gambar = $_FILES["gambar"]["name"];
     $tempname = $_FILES["gambar"]["tmp_name"];
     $folder = "./img/" . $gambar;
 
-    $sql = "INSERT INTO kostum VALUES ('','$kostum','$harga','$ukuran','$include','$gambar')";
+    $sql = "INSERT INTO kostum VALUES 
+    ('','$kostum','$harga','$ukuran','$include','$gambar')";
     mysqli_query($conn,$sql);
 
     if (move_uploaded_file($tempname, $folder)) {
         echo "";
     } else {
-        echo "<h3>Gagal mengupload gambar</h3>";
+        echo "<script>
+            alert('Gagal mengupload gambar!');
+            document.location.href='adminmenu.php';
+            </script>";
     }
 
     if(mysqli_affected_rows($conn)>0){
@@ -77,7 +81,7 @@ if(isset($_POST["simpan"])){
                 <input type="text" name="include" placeholder="Enter your price" required>
                 <p>Gambar</p>
                 <input id="form-control" type="file" name="gambar">
-                <button type="submit" name="edit" class="addbutton">Tambah</button>
+                <button type="submit" name="simpan" class="addbutton">Tambah</button>
             </form>
         </div>
     </div>

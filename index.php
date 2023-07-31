@@ -1,13 +1,3 @@
-<?php 
-
-session_start();
-$username=$_SESSION["username"];
-$name=$_SESSION["name"];
-$conn = mysqli_connect('localhost','root','','kapitaputri');
-$result = mysqli_query($conn, "SELECT * FROM rental");
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,6 +15,7 @@ $result = mysqli_query($conn, "SELECT * FROM rental");
         <div class="tengah">
             <a href="#about">ABOUT</a>
             <a href="store.php">STORE</a>
+            <a href="rental.php">RENTED</a>
         </div>
         <?php 
             if(isset($_SESSION["username"])){
@@ -70,29 +61,6 @@ $result = mysqli_query($conn, "SELECT * FROM rental");
                 Saya juga memiliki minat dan semangat belajar yang tinggi</p>
             </div>
             <img src="introduction.jpg" alt="introduction" class="introductionpic">
-        </div>
-        <h1>LIST KOSTUM YANG SEDANG DIRENTAL</h1>
-        <div class="datakostum">
-            <table>
-                <thead>
-                    <tr>
-                        <th>No</th>
-                        <th>Nama Kostum</th>
-                        <th>Penyewa</th>
-                        <th>Tanggal Rental</th>
-                    </tr>
-                </thead>
-                <tbody>
-                <?php $i=1; while ($row = mysqli_fetch_assoc($result)): ?>
-                    <tr>
-                        <td><?php echo $row["id"]; ?></td>
-                        <td><?php echo $row["kostum"]; ?></td>
-                        <td><?php echo $row["nama"]; ?></td>
-                        <td><?php echo $row["tglrental"]; ?></td>
-                    </tr>
-                <?php $i++; endwhile; ?>
-                </tbody>
-            </table>
         </div>
     </div>
 </body>

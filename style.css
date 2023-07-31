@@ -437,7 +437,7 @@ header .headerregister a {
 
 .card img {
     width: 15rem;
-    height: 15rem;
+    height: 20rem;
     object-fit: cover;
     object-position: center;
     border-radius: 1rem;
