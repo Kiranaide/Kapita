@@ -12,15 +12,15 @@ $username=$_SESSION["username"];
 $conn = mysqli_connect('localhost','root','','kapitaputri');
 if(isset($_POST["simpan"])){
     $kostum=$_POST["kostum"];
-    $ukuran=$_POST["ukuran"];
     $harga=$_POST["harga"];
+    $ukuran=$_POST["ukuran"];
     $include=$_POST["include"];
-    $gambar = $_FILES["gambar"]["name"];
-    $tempname = $_FILES["gambar"]["tmp_name"];
-    $folder = "./img/" . $gambar;
+    $images = $_FILES["images"]["name"];
+    $tempname = $_FILES["images"]["tmp_name"];
+    $folder = "./img/" . $images;
 
     $sql = "INSERT INTO kostum VALUES 
-    ('','$kostum','$harga','$ukuran','$include','$gambar')";
+    ('','$kostum','$harga','$ukuran','$include','$images')";
     mysqli_query($conn,$sql);
 
     if (move_uploaded_file($tempname, $folder)) {
@@ -70,7 +70,7 @@ if(isset($_POST["simpan"])){
             <div class="addtext">
                 <h2>Tambah Kostum</h2>
             </div>
-            <form method="post" class="addform">
+            <form method="post" class="addform" enctype="multipart/form-data">
                 <p>Nama Kostum</p>
                 <input type="text" name="kostum" placeholder="Enter your costume" required>
                 <p>Harga</p>
@@ -80,7 +80,7 @@ if(isset($_POST["simpan"])){
                 <p>Include</p>
                 <input type="text" name="include" placeholder="Enter your price" required>
                 <p>Gambar</p>
-                <input id="form-control" type="file" name="gambar">
+                <input id="form-control" type="file" name="images">
                 <button type="submit" name="simpan" class="addbutton">Tambah</button>
             </form>
         </div>
