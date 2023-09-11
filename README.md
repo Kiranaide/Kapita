@@ -1,7 +1,7 @@
-#This is for campus project!
-##You can use it for learning purpose but not in commercial one
+# This is for campus project!
+## You can use it for learning purpose but not in commercial one
 
-##What i use?
+## What i use?
 - PHP
 - CSS
 - JavaScript for alert script
